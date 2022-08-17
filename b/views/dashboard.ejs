@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        .flex-container {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    
+       .zero{
+           margin-top: 50px;
+       }
+    
+       .one{
+           margin-left: 100px;
+       }
+       .two{
+           margin-left: 100px;
+       }
+       .three{
+           margin-left: 100px;
+       }
+       .four{
+           margin-left: 100px;
+       }
+       .five{
+           margin-left: 100px;
+       }
+    </style>
+
+<%- include("./partials/header.ejs") %>
+<div >
+    <!--    <p class="welcome">-->
+    <!--        <i>Welcome to Human Resource <br> Management System, <br> <b>HRMS</b>!</i>-->
+    <!--    </p>-->
+    <div class="flex-container"><% for( let i = 0; i < data.length; i++ ) { %>
+        <div class="zero"> <span><%= data[i].name %> <span>:</span> </div>
+    </span>
+        <div class="one"><span><span>Product Description:</span><%= data[i].description %></span></div>
+        
+        <div class="two"> <span> <span>Starting price:</span><%= data[i].startingPrice %> </span></div>
+    
+       <div class="three"> <span><span>Seller:</span><%= data[i].seller %></span></div>
+       
+        <div class="four"><span><span>Recent bid:</span> <%= data[i].bid %></span></div>
+
+        <div class="five"><span><span>Recent bidder:</span> <%= data[i].bidder %></span></div>
+
+        <div>   <form action="/" method="post">
+            <label for="bid">Price</label>
+            <input type="number" name="bid"/>
+            <input type="hidden" name="_id" value="<%= data[i]._id %>"/>
+            <input class="btn" type="submit">
+        </form></div>
+    </div>
+    
+        <br>
+    <% } %>
+</div>
+<%- include("./partials/footer.ejs") %>
+</body>
+</html>

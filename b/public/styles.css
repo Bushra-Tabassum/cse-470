@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: black;
+    /*background-color: brown;*/
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 83%;
+    font-size: 1.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label, input, .time {
+    margin: 3px;
+}
+
+.container input {
+    height: 30px;
+}
+
+.container .btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.75rem;
+}
+
+.container form fieldset {
+    margin: 15px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-contain {
+    height: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+.welcome {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    margin-left: 100px;
+}
+
+.menu a {
+    padding: 0 15px;
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    background-color: #c4c4c4;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #4d4d4d;
+}
+
+.fetch {
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.fetch:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.card {
+    padding: 10px;
+    display: flex;
+    gap: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.cards {
+    width: 250px;
+    height: 400px;
+}
+
+table {
+    margin: 30px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+th, td {
+    margin: 0;
+    padding: 0;
+    padding-right: 30px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.monthly-table th:nth-child(1), td:nth-child(1), th:nth-child(4), td:nth-child(4) {
+    text-align: center;
+}
+
+.daily-table {
+
+}
